@@ -1,0 +1,99 @@
+canvas {
+    display: block;
+    position:absolute;
+    z-index:-1;
+  }
+
+ body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Outfit', sans-serif;
+      cursor: url('images/pointer.svg'), auto; /* Custom cursor */
+    }
+
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(to top, #111, #26027913);
+    background-blend-mode: multiply;
+    
+}
+
+
+
+.btn-primary,
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #363636;
+   
+}
+
+
+
+.section-title {
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #1a1a1a;
+    color: #ddd;
+    border: none;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: 50px;   
+    cursor:none;
+}
+
+.logo-img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+    color:red;
+    text-shadow: 0 5px 10px rgba(255, 0, 0, 0.8);
+}
+
+#aestheticCanvas {
+    opacity: 0.8;
+}
+
+
+.glass-card::before {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color:red;
+}
+ /* Custom styles for glassmorphism effect */
+.glass-card {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem; /* Bootstrap's rounded-4 gives 0.5rem, rounded-5 gives 1rem, rounded-pill for pill shape */
+    max-width: 80vh;
+}
+
+/* Adjustments for social media icons */
+.social-icon {
+    width: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s;
+}
+
+.social-icon:hover {
+    background: #8d0d17; /* Keep your hover color */
+    transform:scale(1.2);
+    transition: transform 0.3s ease;
+}
