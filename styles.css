@@ -85,21 +85,7 @@ body {
     /* Bootstrap's rounded-4 gives 0.5rem, rounded-5 gives 1rem, rounded-pill for pill shape */
 }
 
-/* Adjustments for social media icons */
-.social-icon {
-    
-    backdrop-filter: blur(2px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: background 0.5s;
-}
 
-.social-icon:hover {
-    color: #dc3545;
-    /* Keep your hover color */
-    transform: scale(1.2);
-    transition: transform 0.5s ease;
-    
-}
 
 
 .badge-track {
@@ -212,6 +198,8 @@ body {
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 5px;
+  font-family: "Anta", sans-serif;
+
 }
 
 .desc {
@@ -250,10 +238,8 @@ body {
 }
 
 .main-preview {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: linear-gradient(to bottom, #c41019, #1f1e1e81);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-}
+    background: linear-gradient(to bottom, #c41019, #7203889f);
+ }
 
 .small-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -360,7 +346,7 @@ body {
 }
 
 .fade-in-element.in-view {
-    opacity: 1;
+  opacity: 1;
   animation: fade-in-up 1s; /* Make visible when in view */
 }
 
@@ -423,3 +409,54 @@ body {
     /* Remove animation-fill-mode if you want it to revert after animation */
     animation-fill-mode: forwards; /* Keeps the last keyframe state (important for bounce) */
 }
+
+.nova-square-regular {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.section-title {
+    font-family: "Anta", sans-serif;
+  font-weight: 800; 
+  
+}
+
+
+#contact {
+    background: url('/images/bg.jpg'), rgb(189, 6, 6);  
+    background-blend-mode: overlay;
+}
+
+#process-section{ 
+    background: url('/images/bg.jpg'), rgb(73, 3, 3); 
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.glass-link{
+    padding: 10px 10px;  
+    border: 1px solid rgba(184, 184, 184, 0.507);
+    background-color: #cccccc1c;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    transition: background 0.5s;
+    text-align: center;
+}
+
+.glass-link:hover {
+    background: #dc3545;
+    /* Keep your hover color */
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+

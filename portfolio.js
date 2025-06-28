@@ -118,7 +118,7 @@
 
                 ctx.beginPath(); // Start a new path for the star
                 ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2); // Draw a circle
-                ctx.fillStyle = `rgba(255, 100, 100, ${star.alpha})`; // Set fill color with current alpha
+                ctx.fillStyle = `rgba(220, 53, 69, ${star.alpha})`; // Set fill color with current alpha
                 ctx.shadowBlur = 10; // Add a glowing shadow effect
                 ctx.shadowColor = '#bb86fc'; // Purple shadow color
                 ctx.fill(); // Fill the star circle
