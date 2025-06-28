@@ -4,13 +4,24 @@
         const ctx = canvas.getContext('2d');
 
         // Initialize canvas dimensions to the full window size
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width =  document.documentElement.clientWidth - document.documentElement.clientWidth/10;
+
+        canvas.height = document.documentElement.clientHeight;
 
         // Array to store star objects
         let stars = [];
         // Desired number of stars in the field
-        const starCount = 200; // Increased star count for a denser field
+        console.log(window.innerWidth)
+
+        if (window.innerWidth > 800){
+             multi = 0.13;
+        }
+
+        else{
+            multi = 0.1;
+        }
+           
+        const starCount = window.innerWidth * multi; // Increased star count for a denser field
 
         // Object to store mouse coordinates, initialized outside the canvas
         // Mouse coordinates are 'undefined' when the mouse is not hovering.
@@ -49,10 +60,10 @@
                     radius: Math.random() * 1.5 + 2,     // Random radius between 0.5 and 2
                     alpha: Math.random(),                  // Random initial opacity between 0 and 1
                     // Random delta for twinkling, positive or negative (reduced range for smoother effect)
-                    delta: (Math.random() * 0.015 + 0.003) * (Math.random() < 0.5 ? -1 : 1),
+                    delta: (Math.random() * 0.02 + 0.003) * (Math.random() < 0.5 ? -1 : 1),
                     // Small random velocity for movement (positive or negative)
-                    vx: (Math.random() * 0.2 - 0.1), // Velocity X between -0.1 and 0.1
-                    vy: (Math.random() * 0.2 - 0.1)  // Velocity Y between -0.1 and 0.1
+                    vx: (Math.random() * 0.5 - 0.1), // Velocity X between -0.1 and 0.1
+                    vy: (Math.random() * 0.5 - 0.1)  // Velocity Y between -0.1 and 0.1
                 });
             }
         }
@@ -174,10 +185,13 @@
         // Add event listener for window resize
         window.addEventListener('resize', () => {
             // Update canvas dimensions to match the new window size
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+             canvas.width =  document.documentElement.clientWidth - document.documentElement.clientWidth/10;
+        
+
+        canvas.height = document.documentElement.clientHeight;
             // Re-initialize stars to fill the new canvas area evenly
             initStars();
+            resizeCards();
         });
 
         // Add event listener for mouse movement on the canvas
@@ -194,3 +208,5 @@
             mouse.y = undefined;
         });
     
+
+
