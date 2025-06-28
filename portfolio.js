@@ -16,7 +16,9 @@
         if (window.innerWidth > 800){
              multi = 0.13;
         }
-
+        else if (window.innerWidth > 400) {
+            multi = 0.01;
+        }
         else{
             multi = 0.1;
         }
