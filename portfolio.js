@@ -4,14 +4,14 @@
         const ctx = canvas.getContext('2d');
 
         // Initialize canvas dimensions to the full window size
-        canvas.width =  document.documentElement.clientWidth;
+        canvas.width = window.innerWidth;
 
-        canvas.height = document.documentElement.clientHeight;
+        canvas.height =window.innerHeight;
 
         // Array to store star objects
         let stars = [];
         // Desired number of stars in the field
-        console.log(window.innerWidth)
+       
 
         if (window.innerWidth > 800){
              multi = 0.13;
@@ -187,10 +187,9 @@
         // Add event listener for window resize
         window.addEventListener('resize', () => {
             // Update canvas dimensions to match the new window size
-             canvas.width =  document.documentElement.clientWidth;
-        
+                canvas.width = window.innerWidth;
 
-        canvas.height = document.documentElement.clientHeight;
+                canvas.height =window.innerHeight;
             // Re-initialize stars to fill the new canvas area evenly
             initStars();
             
