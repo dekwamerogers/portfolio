@@ -4,7 +4,7 @@
         const ctx = canvas.getContext('2d');
 
         // Initialize canvas dimensions to the full window size
-        canvas.width =  document.documentElement.clientWidth - document.documentElement.clientWidth/10;
+        canvas.width =  document.documentElement.clientWidth;
 
         canvas.height = document.documentElement.clientHeight;
 
@@ -187,13 +187,13 @@
         // Add event listener for window resize
         window.addEventListener('resize', () => {
             // Update canvas dimensions to match the new window size
-             canvas.width =  document.documentElement.clientWidth - document.documentElement.clientWidth/10;
+             canvas.width =  document.documentElement.clientWidth;
         
 
         canvas.height = document.documentElement.clientHeight;
             // Re-initialize stars to fill the new canvas area evenly
             initStars();
-            resizeCards();
+            
         });
 
         // Add event listener for mouse movement on the canvas

@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const fadeInElements = document.querySelectorAll('.fade-in-element');
+const buttons = document.querySelectorAll('.bounce-on-scroll');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -57,3 +58,9 @@ const observer = new IntersectionObserver((entries) => {
 fadeInElements.forEach(element => {
   observer.observe(element);
 });
+
+
+buttons.forEach(element => {
+  observer.observe(element);
+});
+
