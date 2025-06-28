@@ -431,12 +431,12 @@ body {
 
 
 #contact {
-    background: url('/images/bg.jpg'), rgb(189, 6, 6);  
+    background: url('images/bg.jpg'), rgb(189, 6, 6);  
     background-blend-mode: overlay;
 }
 
 #process-section{ 
-    background: url('/images/bg.jpg'), rgb(73, 3, 3); 
+    background: url('images/bg.jpg'), rgb(73, 3, 3); 
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: cover;
@@ -445,8 +445,6 @@ body {
 
 .glass-link{
     padding: 10px 10px;  
-    border: 1px solid rgba(184, 184, 184, 0.507);
-    background-color: #cccccc1c;
     backdrop-filter: blur(5px);
     border-radius: 50%;
     transition: background 0.5s;
