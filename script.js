@@ -38,3 +38,22 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
+
+
+const fadeInElements = document.querySelectorAll('.fade-in-element');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      entry.target.dataset.inView = "true";
+      observer.unobserve(entry.target); // Optional: Stop observing once faded in
+    }
+  });
+}, {
+  threshold: 0.2 // Adjust this value to control when the fade-in triggers (0.0 - 1.0)
+});
+
+fadeInElements.forEach(element => {
+  observer.observe(element);
+});
