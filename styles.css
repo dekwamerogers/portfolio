@@ -454,8 +454,8 @@ body {
 }
 
 #about-card{
-    background: url('images/bg.jpg'), rgb(189, 6, 6);  
-    background-blend-mode: overlay;
+    background: rgba(189, 6, 6, 0);  
+    
     background-size: cover;
 }
 
