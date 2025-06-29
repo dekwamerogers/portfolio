@@ -451,16 +451,15 @@ body {
 }
 
 #about-card{
-    background: rgba(189, 6, 6, 0);  
+    background: #800103;  
     
     background-size: cover;
 }
 
 #service-card {
-    background: url('images/bg.jpg'), rgb(73, 3, 3); 
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-attachment: fixed;
+    background: rgba(189, 6, 6, 0);  
+    
+    
 }
 
 .list-group-item {
