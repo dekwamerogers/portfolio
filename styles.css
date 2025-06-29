@@ -13,12 +13,9 @@ body {
     cursor: url('images/pointer.svg'), auto;
     /* Custom cursor */
     overflow-x: hidden;
-    background: url('images/bg.jpg'), rgb(73, 3, 3); 
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-
+    background: #010007;
     
-
+    
 }
 
 .hero {
@@ -43,7 +40,7 @@ body {
     background-color: #363636;
 
 }
-
+ 
 
 .card {
     background-color: #1a1a1a;
@@ -462,7 +459,7 @@ body {
 #service-card {
     background: url('images/bg.jpg'), rgb(73, 3, 3); 
     background-blend-mode: overlay;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
 }
 
