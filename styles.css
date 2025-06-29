@@ -459,7 +459,7 @@ body {
 #service-card {
     background: url('images/bg.jpg'), rgb(73, 3, 3); 
     background-blend-mode: overlay;
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
 }
 
