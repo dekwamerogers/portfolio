@@ -8,7 +8,7 @@ canvas {
 }
 
 body {
-    background-color: #111;
+    background-color: #010007;
     color: #eee;
     font-family: 'Outfit', sans-serif;
     cursor: url('images/pointer.svg'), auto;
@@ -19,7 +19,7 @@ body {
 
 .hero {
     padding: 100px 0;
-    background: linear-gradient(to top, #111, #52525213);
+    background: linear-gradient(to top, #010007, #52525213);
     background-blend-mode: multiply;
 
 }
@@ -65,13 +65,6 @@ body {
 }
 
 
-.badge {
-    background-color: rgba(7, 29, 155, 0.651);
-    border: 1px solid rgba(50, 9, 148, 0.555);
-
-    padding: 15px;
-    border-radius: 20px;
-}
 
 
 /* Custom styles for glassmorphism effect */
@@ -131,9 +124,11 @@ body {
 
 .badge {
     margin: auto 4px;
-    border: 2px solid rgba(15, 4, 65, 0.24);
     background-color: #c70c25b4;
     backdrop-filter: blur(20px);
+    background: linear-gradient(160deg, #c41019, #6203889f);
+    border:1px solid rgba(255, 255, 255, 0.24);
+    
 }
 
 .badge-track:hover {
@@ -237,7 +232,7 @@ body {
 }
 
 .main-preview {
-    background: linear-gradient(to bottom, #c41019, #7203889f);
+    background: linear-gradient(to bottom, #800103, #7203889f); 
  }
 
 .small-card {
@@ -355,7 +350,6 @@ body {
 
 
 
-
 .project-img {
     transform: scale(0.9) translateY(30px) rotate(-2deg);        
     border-radius: 10px; 
@@ -374,8 +368,6 @@ body {
     z-index: 0;
     box-shadow: 0px 0px 50vh  rgba(212, 23, 48, 0.678);
 }
-
-
 
 /* Define the bounce keyframes */
 @keyframes bounce {
@@ -451,7 +443,7 @@ body {
 }
 
 .glass-link:hover {
-    background: #dc3545;
+    background: #800103;
     /* Keep your hover color */
     transform: scale(1.2);
     transition: transform 0.5s ease;
@@ -465,4 +457,27 @@ body {
 #service-card {
     background: url('images/bg.jpg'), rgb(73, 3, 3); 
     background-blend-mode: overlay;
+}
+
+.list-group-item {
+    border: 0;
+    background-color: transparent;
+    padding: 2px 0;
+}
+
+.text-red {
+    color: #800103;
+    filter: brightness(1.2);
+}
+
+.header-btn {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 30px;
+    background-color: #4444442d;
+    backdrop-filter: blur(3px);
+}
+
+.header-btn:hover {
+    background-color: #800103;
 }
