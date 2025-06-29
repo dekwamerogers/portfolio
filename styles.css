@@ -128,7 +128,6 @@ body {
     backdrop-filter: blur(20px);
     background: linear-gradient(160deg, #c41019, #6203889f);
     border:1px solid rgba(255, 255, 255, 0.24);
-    
 }
 
 .badge-track:hover {
@@ -466,8 +465,8 @@ body {
 }
 
 .text-red {
-    color: #800103;
-    filter: brightness(1.2);
+    color: #990103;
+    
 }
 
 .header-btn {
