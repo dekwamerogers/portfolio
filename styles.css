@@ -457,3 +457,12 @@ body {
     transition: transform 0.5s ease;
 }
 
+#about-card{
+    background: url('images/bg.jpg'), rgb(189, 6, 6);  
+    background-blend-mode: overlay;
+}
+
+#service-card {
+    background: url('images/bg.jpg'), rgb(73, 3, 3); 
+    background-blend-mode: overlay;
+}
