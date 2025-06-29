@@ -8,23 +8,28 @@ canvas {
 }
 
 body {
-    background-color: #010007;
     color: #eee;
     font-family: 'Outfit', sans-serif;
     cursor: url('images/pointer.svg'), auto;
     /* Custom cursor */
     overflow-x: hidden;
+    background: url('images/bg.jpg'), rgb(73, 3, 3); 
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+
+    
 
 }
 
 .hero {
     padding: 100px 0;
     background: linear-gradient(to top, #010007, #52525213);
-    background-blend-mode: multiply;
+    
 
 }
 
 #header {
+    
     position: relative;
     overflow: hidden;
     
@@ -451,11 +456,14 @@ body {
 #about-card{
     background: url('images/bg.jpg'), rgb(189, 6, 6);  
     background-blend-mode: overlay;
+    background-size: cover;
 }
 
 #service-card {
     background: url('images/bg.jpg'), rgb(73, 3, 3); 
     background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .list-group-item {
