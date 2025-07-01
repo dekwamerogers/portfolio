@@ -1,7 +1,7 @@
 body {
 	background: #010007;
 	color: #eee;
-	cursor: url('images/pointer.svg'), auto;
+	cursor: url('../images/pointer.svg'), auto;
 	font-family: 'Outfit', sans-serif;
 	overflow-x: hidden;
 }
@@ -20,8 +20,9 @@ canvas {
 }
 
 #contact {
+	background: url('../images/bg.jpg'), rgb(189,6,6);
+
 	background-blend-mode: overlay;
-	background: url('images/bg.jpg'), rgb(189,6,6);
 }
 
 #header {
@@ -30,10 +31,11 @@ canvas {
 }
 
 #process-section {
+	background: url('../images/bg.jpg'), rgb(73,3,3);
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 	background-size: cover;
-	background: url('images/bg.jpg'), rgb(73,3,3);
+
 }
 
 #service-card {
